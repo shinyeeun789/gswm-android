@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/page_statistics"
+        android:enabled="true"
+        android:icon="@drawable/icon_statistics"
+        android:title="통계" />
+    <item
+        android:id="@+id/page_calendar"
+        android:enabled="true"
+        android:icon="@drawable/icon_calendar"
+        android:title="일정" />
+    <item
+        android:id="@+id/page_home"
+        android:enabled="true"
+        android:icon="@drawable/icon_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/page_place"
+        android:enabled="true"
+        android:icon="@drawable/icon_place"
+        android:title="장소" />
+    <item
+        android:id="@+id/page_gift"
+        android:enabled="true"
+        android:icon="@drawable/icon_gift"
+        android:title="보상" />
+
+</menu>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DelayGoal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/DelayGoalTop"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/img_wave"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="135dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="138dp"
+            android:layout_marginEnd="52dp"
+            android:fontFamily="@font/payboocotfextrabold"
+            android:gravity="center"
+            android:text="목표 미루기"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnOK"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/edt_fallRange"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="@font/barunhipi"
+        android:hint="공부하지 못한 분량은? (입력 예: 10)"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fallRange" />
+
+    <Button
+        android:id="@+id/btnDelayT"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="@font/barunhipi"
+        android:text="다음 날"
+        android:textColor="#404040"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fallRangeDate" />
+
+    <Button
+        android:id="@+id/btnDelayC"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="@font/barunhipi"
+        android:text="날짜 선택"
+        android:textColor="#404040"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelayNW" />
+
+    <Button
+        android:id="@+id/btnDelayNW"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="@font/barunhipi"
+        android:text="다음주"
+        android:textColor="#404040"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelayT" />
+
+    <TextView
+        android:id="@+id/tv_fallRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="91dp"
+        android:fontFamily="@font/payboocotfextrabold"
+        android:text="목표 1의 목표 분량은 0P였어요"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DelayGoalTop" />
+
+    <TextView
+        android:id="@+id/tv_fallRangeDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="131dp"
+        android:fontFamily="@font/payboocotfextrabold"
+        android:text="미루고 싶은 날짜는?"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_fallRange" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

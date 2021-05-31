@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/round_bg"
+    android:padding="40dp">
+
+    <TextView
+        android:id="@+id/tvGoalDialogName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/barunhipi"
+        android:textSize="20dp"
+        android:text="목표명"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btnNoAchGoal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#CCCCFF"
+        android:text="미달성"
+        android:fontFamily="@font/nanumbarunpenr"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnDelayGoal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#CCCCFF"
+        android:text="미  룸"
+        android:fontFamily="@font/nanumbarunpenr"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnAchGoal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#CCCCFF"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/nanumbarunpenr"
+        android:text="달  성"
+        android:textSize="18dp"/>
+</LinearLayout>

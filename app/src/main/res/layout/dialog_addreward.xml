@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/round_bg"
+    android:padding="40dp">
+
+    <TextView
+        android:id="@+id/tv_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/barunhipi"
+        android:textSize="20dp"
+        android:text="배지 개수"
+        android:layout_marginBottom="5dp"/>
+
+    <Spinner
+        android:id="@+id/badge_spinner"
+        android:layout_width="200dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/barunhipi"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_rewardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/barunhipi"
+        android:textSize="20dp"
+        android:text="나에게 주는 선물🎁"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/edt_rewardName"
+        android:layout_width="200dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/barunhipi"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:text="취소"
+            android:textColor="#404040"
+            android:textSize="18dp"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:text="확인"
+            android:textColor="#404040"
+            android:textSize="18dp"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+</LinearLayout>

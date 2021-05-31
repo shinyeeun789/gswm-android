@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/round_bg"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="휴식시간을 입력해주세요"
+        android:fontFamily="@font/barunhipi"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edtBreakTime"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:hint="휴식시간 입력"
+        android:textSize="20dp"
+        android:fontFamily="@font/barunhipi" />
+
+    <Button
+        android:id="@+id/btnBreakStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="확인"
+        android:textColor="#404040"
+        android:fontFamily="@font/nanumbarunpenb"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

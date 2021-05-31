@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/round_bg"
+    android:padding="40dp">
+
+    <Button
+        android:id="@+id/btnGoGoal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:fontFamily="@font/barunhipi"
+        android:textColor="#404040"
+        android:text="📚  목표 추가하기"
+        android:textSize="19dp"/>
+
+    <Button
+        android:id="@+id/btnGoDday"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#404040"
+        android:text="📅  디데이 추가하기"
+        android:fontFamily="@font/barunhipi"
+        android:textSize="19dp"/>
+</LinearLayout>

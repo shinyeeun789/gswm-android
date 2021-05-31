@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/img_wave"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="135dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="138dp"
+            android:layout_marginEnd="52dp"
+            android:fontFamily="@font/payboocotfextrabold"
+            android:gravity="center"
+            android:text="목표 추가"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnOK"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOK"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/icon_round_btn"
+            android:fontFamily="@font/payboocotfextrabold"
+            android:stateListAnimator="@null"
+            android:text="추가"
+            android:textColor="#404040"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <CheckBox
+        android:id="@+id/chk_mon"
+        android:layout_width="wrap_content"
+        ㅇandroid:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/barunhipi"
+        android:text="월"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkDay" />
+
+    <CheckBox
+        android:id="@+id/chk_sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="43dp"
+        android:enabled="false"
+        android:fontFamily="@font/barunhipi"
+        android:text="일"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chk_sat"
+        app:layout_constraintTop_toBottomOf="@+id/btnDatePicker2" />
+
+    <CheckBox
+        android:id="@+id/chk_sat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:enabled="false"
+        android:fontFamily="@font/barunhipi"
+        android:text="토"
+        app:layout_constraintStart_toEndOf="@+id/chk_fri"
+        app:layout_constraintTop_toBottomOf="@+id/btnDatePicker2" />
+
+    <CheckBox
+        android:id="@+id/chk_thu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:enabled="false"
+        android:fontFamily="@font/barunhipi"
+        android:text="목"
+        app:layout_constraintStart_toEndOf="@+id/chk_wed"
+        app:layout_constraintTop_toBottomOf="@+id/checkDay" />
+
+    <TextView
+        android:id="@+id/tv_goalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/payboocotfextrabold"
+        android:text="할 일은?"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <TextView
+        android:id="@+id/tv_startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/payboocotfextrabold"
+        android:text="시작할 시간은?"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_quantity" />
+
+    <TextView
+        android:id="@+id/tv_startTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="7dp"
+        android:fontFamily="@font/payboocotfextrabold"
+        android:text="-"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnDatePicker2"
+        app:layout_constraintStart_toEndOf="@+id/btnDatePicker1"
+        app:layout_constraintTop_toBottomOf="@+id/btnTimePicker" />
+
+    <EditText
+        android:id="@+id/edt_quantity"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/barunhipi"
+        android:hint="하루 목표를 입력해주세요."
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/quantityLists"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_quantity" />
+
+    <Spinner
+        android:id="@+id/quantityLists"
+        android:layout_width="113dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="@font/barunhipi"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_goalName" />
+
+    <Button
+        android:id="@+id/btnTimePicker"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/barunhipi"
+        android:text="00 : 00"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_startTime" />
+
+    <TextView
+        android:id="@+id/tv_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="245dp"
+        android:fontFamily="@font/payboocotfextrabold"
+        android:text="하루 목표 분량은?"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_goalName" />
+
+    <EditText
+        android:id="@+id/edt_goalName"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="@font/barunhipi"
+        android:hint="할 일을 입력해주세요."
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goalName" />
+
+    <TextView
+        android:id="@+id/tv_term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="240dp"
+        android:fontFamily="@font/payboocotfextrabold"
+        android:text="기간은?"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/switchButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTimePicker" />
+
+    <Switch
+        android:id="@+id/switchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/payboocotfextrabold"
+        android:textColor="#868686"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTimePicker" />
+
+    <Button
+        android:id="@+id/btnDatePicker2"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="@color/white"
+        android:enabled="false"
+        android:fontFamily="@font/barunhipi"
+        android:text="종료 날짜 선택"
+        android:textColor="#9F9F9F"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchButton" />
+
+    <Button
+        android:id="@+id/btnDatePicker1"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:enabled="false"
+        android:fontFamily="@font/barunhipi"
+        android:text="시작 날짜 선택"
+        android:textColor="#9F9F9F"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchButton" />
+
+    <TextView
+        android:id="@+id/checkDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="197dp"
+        android:fontFamily="@font/payboocotfextrabold"
+        android:text="어떤 요일에 진행하나요?"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_startTime2" />
+
+    <CheckBox
+        android:id="@+id/chk_fri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:enabled="false"
+        android:fontFamily="@font/barunhipi"
+        android:text="금"
+        app:layout_constraintStart_toEndOf="@+id/chk_thu"
+        app:layout_constraintTop_toBottomOf="@+id/btnDatePicker2" />
+
+    <CheckBox
+        android:id="@+id/chk_tue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:enabled="false"
+        android:fontFamily="@font/barunhipi"
+        android:text="화"
+        app:layout_constraintStart_toEndOf="@+id/chk_mon"
+        app:layout_constraintTop_toBottomOf="@+id/checkDay" />
+
+    <CheckBox
+        android:id="@+id/chk_wed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:enabled="false"
+        android:fontFamily="@font/barunhipi"
+        android:text="수"
+        app:layout_constraintStart_toEndOf="@+id/chk_tue"
+        app:layout_constraintTop_toBottomOf="@+id/checkDay" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
