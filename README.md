@@ -136,7 +136,7 @@ Android Studio 4.1 환경에서 Java를 사용하여 개발한 앱
         <sub><b>PIC2 : 주간 통계</b></sub><br/></td>
       <td align="center">
         <img src="https://user-images.githubusercontent.com/70800414/234172551-44230131-e3ab-4e0b-b191-41795ebcf719.png" width="200" alt=""/><br />
-        <sub><b>PIC2 : 월간 통계</b></sub><br/></td>
+        <sub><b>PIC3 : 월간 통계</b></sub><br/></td>
     </tr>
   </tbody>
 </table>
@@ -158,7 +158,7 @@ Android Studio 4.1 환경에서 Java를 사용하여 개발한 앱
         <sub><b>PIC2 : 근처 카페 찾기</b></sub><br/></td>
       <td align="center">
         <img src="https://user-images.githubusercontent.com/70800414/234172978-973f6075-b6ae-4741-aeff-6561f9d89a58.png" width="200" alt=""/><br />
-        <sub><b>PIC2 : 근처 도서관 찾기</b></sub><br/></td>
+        <sub><b>PIC3 : 근처 도서관 찾기</b></sub><br/></td>
     </tr>
   </tbody>
 </table>
