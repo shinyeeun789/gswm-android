@@ -2,9 +2,9 @@
 Android Studio 4.1 환경에서 Java를 사용하여 개발한 앱
 
 ## 💻 프로젝트 소개
-학생 때는 대학교 입시를 위해, 대학생 때는 취업을 위해, 직장인 때는 자기계발을 위해 공부해야 하는 현대인에게 공부는 평생을 함께 할 동반자이다. 따라서, 최근 들어 공부하는 모습을 찍어 SNS에 인증하거나 Youtube에서 공부 방송을 진행하는 등 공부 습관에 대한 관심도 나날이 높아지고 있습니다.
-본 시스템은 사용자가 세운 목표를 달성함으로써 얻는 성취감으로 꾸준히 공부에 흥미를 느낄 수 있도록 도움을 주고자 개발하였습니다.
-개발된 시스템을 통해 사용자는 쉽고 빠르게 스터디 플랜을 세워 이를 바탕으로 모든 목표를 달성할 수 있게 될 것이라 기대됩니다.
+최근 들어 공부하는 모습을 찍어 SNS에 인증하거나 Youtube에서 공부 방송을 진행하는 등 공부 습관에 대한 관심도 나날이 높아지고 있습니다. <br/>
+본 시스템은 사용자가 세운 목표를 달성함으로써 얻는 성취감으로 꾸준히 공부에 흥미를 느낄 수 있도록 도움을 주고자 개발하였습니다. <br/>
+개발된 시스템을 통해 사용자는 쉽고 빠르게 스터디 플랜을 세워 이를 바탕으로 모든 목표를 달성할 수 있게 될 것이라 기대됩니다. <br/>
 
 ### 🕰 개발 기간
 2021.03.02 - 2021.06.30
@@ -20,10 +20,8 @@ Android Studio 4.1 환경에서 Java를 사용하여 개발한 앱
 - 할 일과 하루 목표 분량 선택
 - 시작 시간 선택
 - 반복되는 목표 추가
-- Room의 목표 Table에 저장
 #### (2) 디데이 추가
 - 디데이 명과 날짜 선택
-- Room의 디데이 Table에 저장
 #### 📷 View
 <table align="center">
   <tbody>
@@ -50,9 +48,9 @@ Android Studio 4.1 환경에서 Java를 사용하여 개발한 앱
 - MaterialCalendarView 라이브러리 사용
 - 목표는 보라색으로, 디데이는 노란색으로 표시
 #### (2) To-Do List
-- 캘린더에서 선택한 날짜의 목표와 디데이가 RecyclerView에 동적으로 표시
-- RecyclerView의 목표 선택 시 목표 달성 여부를 변경할 수 있는 Dialog 출력
-- Dialog의 ‘미달성’ 버튼 선택 시 목표 데이터베이스의 목표 달성 여부 필드가 X로 수정되고, ‘달성’ 버튼 선택 시 O로 수정
+- 목표와 디데이를 RecyclerView에 동적으로 표시
+- 목표 선택 시 목표 달성 여부를 변경할 수 있는 Dialog 출력
+- Dialog의 ‘미달성’ 버튼 선택 시 목표 Table의 목표 달성 여부 필드가 X로 수정되고, ‘달성’ 버튼 선택 시 O로 수정
 - Dialog의 '미룸' 버튼 선택 시 [<a href="https://github.com/shinyeeun789/GSWM/edit/master/README.md#%EB%AA%A9%ED%91%9C-%EB%AF%B8%EB%A3%A8%EA%B8%B0">목표 미루기</a>] 기능으로 이동
 #### 📷 View
 <table align="center">
@@ -104,11 +102,10 @@ Android Studio 4.1 환경에서 Java를 사용하여 개발한 앱
   </tbody>
 </table>
 
-
 ### 스톱워치
 - Chronometer를 사용해 공부 시간 측정
-- 앱이 잠자기 및 앱 대기 모드에 빠지더라도 측정이 중지되지 않도록 base를 elapsedRealtime으로 설정
-- 사용자가 홈 화면으로 이동하더라도 중지 버튼을 누르기 전까지 계속 측정되도록 Foreground Service로 실행
+  - 앱이 잠자기 및 앱 대기 모드에 빠지더라도 측정이 중지되지 않도록 설정
+- Foreground Service
 #### 📷 View
 <table align="center">
   <tbody>
@@ -118,7 +115,7 @@ Android Studio 4.1 환경에서 Java를 사용하여 개발한 앱
          <sub><b>PIC1 : 스톱워치</b></sub><br/></td>
       <td align="center">
         <img src="https://user-images.githubusercontent.com/70800414/234171126-64a4bdba-c6e4-469f-964d-3ca42bb14e80.png" height="350" alt=""/><br />
-        <sub><b>PIC2 : foreground 서비스 실행</b></sub><br/></td>
+        <sub><b>PIC2 : Foreground Service 실행</b></sub><br/></td>
     </tr>
   </tbody>
 </table>
