@@ -35,10 +35,10 @@ Android Studio 4.1 환경에서 Java를 사용하여 개발한 앱
         <sub><b>PIC2 : 목표 추가</b></sub><br/></td>
       <td align="center">
         <img src="https://user-images.githubusercontent.com/70800414/234169554-e1a779ba-732b-450d-842d-e4f73fd06385.png" width="200" alt=""/><br />
-        <sub><b>PIC2 : 반복 목표 추가</b></sub><br/></td>
+        <sub><b>PIC3 : 반복 목표 추가</b></sub><br/></td>
       <td align="center">
         <img src="https://user-images.githubusercontent.com/70800414/234163527-ff565992-6901-469e-b031-a07b7267dbba.png" width="200" alt=""/><br />
-        <sub><b>PIC3 : 디데이 추가</b></sub><br/></td>
+        <sub><b>PIC4 : 디데이 추가</b></sub><br/></td>
     </tr>
   </tbody>
 </table>
