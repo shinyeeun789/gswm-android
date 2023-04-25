@@ -14,7 +14,7 @@ Android Studio 4.1 환경에서 Java를 사용하여 개발한 앱
 ![Room](https://img.shields.io/badge/Room-1976D2.svg?&style=for-the-badge&logo=Java&logoColor=white)
 
 ## 📱 주요 기능
-### 목표 및 디데이 추가
+### 1. 목표 및 디데이 추가
 #### (1) 목표 추가
 - 할 일과 하루 목표 분량 선택
 - 시작 시간 선택
@@ -24,6 +24,14 @@ Android Studio 4.1 환경에서 Java를 사용하여 개발한 앱
 - 디데이 명과 날짜 선택
 - Room의 디데이 Table에 저장
 #### 📷 View
+<table>
+  <tbody>
+    <tr>
+       <td align-"center"><a href=""><img src="https://user-images.githubusercontent.com/70800414/234161523-51a9b5e9-de40-4272-9ce5-f0172294b9fb.png" height="350" alt=""/><br /><b>PIC1 : 목표 추가</b><br/></td>
+    </tr>
+  </tbody>
+</table>
+
 <details>
 <summary> [pic1] 목표 추가 </summary>
   <div markdown="1">
@@ -35,9 +43,9 @@ Android Studio 4.1 환경에서 Java를 사용하여 개발한 앱
   <div markdown="1">
     <img src="https://user-images.githubusercontent.com/70800414/234163527-ff565992-6901-469e-b031-a07b7267dbba.png" height="350"/>
   </div>
-</details><br/>
+</details>
 
-### 캘린더 및 To-Do List
+### 2. 캘린더 및 To-Do List
 #### (1) 캘린더
 - MaterialCalendarView 라이브러리 사용
 - 목표는 보라색으로, 디데이는 노란색으로 표시
